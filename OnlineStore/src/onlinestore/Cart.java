@@ -6,6 +6,9 @@
 package onlinestore;
 
 import java.awt.Color;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /**
  *
@@ -16,8 +19,11 @@ public class Cart extends javax.swing.JFrame {
     /**
      * Creates new form Cart
      */
+   
     public Cart() {
         initComponents();
+       // ImageIcon panel = new ImageIcon(new ImageIcon("src/onlinestore/background.jpg").getImage().getScaledInstance(270, 270, Image.SCALE_DEFAULT));
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -35,7 +41,8 @@ public class Cart extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(44, 62, 80));
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,6 +78,7 @@ public class Cart extends javax.swing.JFrame {
         jLabel1.setText("Total Price");
 
         jPanel2.setBackground(new java.awt.Color(255, 102, 102));
+        jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jPanel2MouseEntered(evt);
@@ -160,6 +168,7 @@ public class Cart extends javax.swing.JFrame {
 
     private void jPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseEntered
        jLabel3.setForeground(Color.white);
+       
     }//GEN-LAST:event_jPanel2MouseEntered
 
     private void jPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseExited
@@ -192,8 +201,9 @@ public class Cart extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Cart.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Cart().setVisible(true);
