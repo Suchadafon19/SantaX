@@ -486,19 +486,25 @@ public class Shop extends javax.swing.JFrame {
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         int check = (int)jSpinner3.getValue();
         if(check>0)
-        everything(c,check,cc);
+            everything(c,check,cc);
+        else 
+             JOptionPane.showMessageDialog(null, "Please check your quantity");
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         int check = (int)jSpinner1.getValue();
         if(check>0)
-        everything(a,check,aa);
+            everything(a,check,aa);
+        else 
+             JOptionPane.showMessageDialog(null, "Please check your quantity");
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         int check = (int)jSpinner2.getValue();
         if(check>0)
-        everything(b,check,bb);
+            everything(b,check,bb);
+        else 
+             JOptionPane.showMessageDialog(null, "Please check your quantity");
     }//GEN-LAST:event_b2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

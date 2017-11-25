@@ -260,8 +260,8 @@ public class Payment extends javax.swing.JFrame {
                     Logger.getLogger(Payment.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-            Category cat = new Category(userid);
-            cat.setVisible(true);
+            Login lg = new Login();
+            lg.setVisible(true);
             dispose();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
